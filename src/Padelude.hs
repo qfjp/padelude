@@ -4,9 +4,10 @@
 {-# LANGUAGE TypeFamilies          #-}
 module Padelude (module P, module Set, (++)) where
 
+import           Data.Semigroup (Semigroup, (<>))
 import           Data.Set.Monad as Set (Set)
-import           Protolude      as P hiding (Set, on, (++))
+import           Protolude      as P hiding (Set, on, (++), (<>))
 
 infixr 5  ++
-(++) :: Monoid a => a -> a -> a
-(++) = mappend
+(++) :: Semigroup a => a -> a -> a
+(++) = (<>)

@@ -1,8 +1,6 @@
 name:                padelude
-version:             0.1.2.1
+version:             0.1.2.2
 synopsis:            A reasonable prelude
-description:         A sensible set of defaults for my own tastes.
-                     Based on protolude.
 homepage:            https://github.com/qfjp/padelude
 license:             GPL-3
 license-file:        COPYING
@@ -25,6 +23,7 @@ tested-with:
   GHC == 7.10.3,
   GHC == 8.0.1,
   GHC == 8.2.1
+  GHC == 8.4.3
 Bug-Reports:         https://github.com/qfjp/padelude/issues
 
 description:
@@ -41,6 +40,6 @@ library
   hs-source-dirs:      src
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
-                     , protolude >= 0.1 && < 1
+                     , protolude >= 0.1 && < 0.3
                      , set-monad >= 0.2.0.0 && < 1
                      , text >= 1 && < 2
